@@ -1,0 +1,230 @@
+.menu-page {
+  padding-top: 82px;
+}
+
+/* Hero */
+.menu-hero {
+  position: relative;
+  padding: 6rem 0;
+  background-image: url('https://images.unsplash.com/photo-1585112799768-bb129fd10250');
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+}
+
+.menu-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(61, 7, 38, 0.85);
+}
+
+.menu-hero .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+}
+
+.menu-hero h1 {
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+
+/* Menu Section */
+.menu-section {
+  padding: 5rem 0;
+  background: var(--color-white);
+}
+
+.menu-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+
+.menu-intro h2 {
+  margin-bottom: 1.5rem;
+}
+
+.menu-intro p {
+  color: var(--color-gray);
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.menu-category {
+  margin-bottom: 4rem;
+  padding: 3rem;
+  background: var(--color-light-gray);
+  border-radius: var(--border-radius-lg);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid var(--color-gold);
+}
+
+.category-icon {
+  font-size: 2.5rem;
+}
+
+.category-header h3 {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--color-bordeaux);
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.menu-item {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.menu-item-header {
+  margin-bottom: 1rem;
+}
+
+.menu-item h4 {
+  font-size: 1.25rem;
+  color: var(--color-bordeaux);
+  font-family: var(--font-serif);
+  margin: 0;
+}
+
+.menu-item p {
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Dietary Section */
+.dietary-section {
+  padding: 5rem 0;
+  background: var(--color-light-gray);
+}
+
+.dietary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.dietary-card {
+  background: var(--color-white);
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease;
+}
+
+.dietary-card:hover {
+  transform: translateY(-5px);
+}
+
+.dietary-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bordeaux);
+  color: var(--color-gold);
+  border-radius: 50%;
+}
+
+.dietary-card h4 {
+  font-size: 1.25rem;
+  color: var(--color-bordeaux);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-serif);
+}
+
+.dietary-card p {
+  color: var(--color-gray);
+  margin: 0;
+}
+
+.dietary-note {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--color-white);
+  border-left: 4px solid var(--color-gold);
+  border-radius: var(--border-radius);
+}
+
+.dietary-note p {
+  color: var(--color-gray);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.dietary-note strong {
+  color: var(--color-bordeaux);
+}
+
+/* Coming Soon Section */
+.coming-soon-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--color-bordeaux) 0%, #5a0f3a 100%);
+  color: var(--color-white);
+}
+
+.coming-soon-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.coming-soon-content h2 {
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+
+.coming-soon-content p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .menu-hero {
+    padding: 4rem 0;
+  }
+
+  .menu-category {
+    padding: 2rem 1.5rem;
+  }
+
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+
+  .dietary-grid {
+    grid-template-columns: 1fr;
+  }
+}
