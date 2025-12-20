@@ -101,3 +101,48 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Test the newsletter subscription backend functionality"
+
+backend:
+  - task: "Newsletter Subscription API"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "testing"
+          comment: "✅ All newsletter subscription tests passed successfully. Tested POST /api/newsletter/subscribe with valid email+consent (200), duplicate email rejection (400), no consent rejection (400), invalid email format rejection (422). Tested GET /api/newsletter/subscribers endpoint (200). Additional edge cases tested: case-insensitive email handling, missing fields validation, empty payload validation. All endpoints working correctly with proper error handling and validation."
+
+  - task: "Newsletter Subscribers Retrieval API"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "testing"
+          comment: "✅ GET /api/newsletter/subscribers endpoint working correctly. Returns proper JSON structure with count and subscribers array. Successfully retrieved active subscribers with correct data format including email, source, and timestamp fields."
+
+metadata:
+  created_by: "testing_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Newsletter Subscription API"
+    - "Newsletter Subscribers Retrieval API"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+    - agent: "testing"
+      message: "Completed comprehensive testing of newsletter subscription backend functionality. All tests passed including main scenarios and edge cases. Backend API is fully functional and ready for production use."
