@@ -29,7 +29,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-box: border-box;
+  box-sizing: border-box;
 }
 
 body {
