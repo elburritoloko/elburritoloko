@@ -82,6 +82,53 @@ async def get_status_checks():
     
     return status_checks
 
+# Newsletter endpoints
+@api_router.post("/newsletter/subscribe")
+async def subscribe_newsletter(input: NewsletterSubscribe):
+    # Validate consent
+    if not input.consent:
+        raise HTTPException(status_code=400, detail="Le consentement est requis pour s'inscrire à la newsletter.")
+    
+    # Check if email already exists
+    existing = await db.newsletter_subscriptions.find_one({"email": input.email.lower()}, {"_id": 0})
+    
+    if existing:
+        # If exists and active, return message
+        if existing.get('active', True):
+            raise HTTPException(status_code=400, detail="Cette adresse email est déjà inscrite à notre newsletter.")
+        else:
+            # Reactivate subscription
+            await db.newsletter_subscriptions.update_one(
+                {"email": input.email.lower()},
+                {"$set": {"active": True, "timestamp": datetime.now(timezone.utc).isoformat()}}
+            )
+            return {"success": True, "message": "Votre abonnement a été réactivé avec succès."}
+    
+    # Create new subscription
+    subscription_dict = input.model_dump()
+    subscription_dict['email'] = subscription_dict['email'].lower()
+    subscription = NewsletterSubscription(**subscription_dict)
+    
+    # Convert to dict and serialize datetime
+    doc = subscription.model_dump()
+    doc['timestamp'] = doc['timestamp'].isoformat()
+    
+    await db.newsletter_subscriptions.insert_one(doc)
+    
+    logger.info(f"New newsletter subscription: {input.email}")
+    
+    return {"success": True, "message": "Inscription réussie ! Vous recevrez bientôt nos actualités."}
+
+@api_router.get("/newsletter/subscribers")
+async def get_subscribers():
+    """Get all active newsletter subscribers (for admin purposes)"""
+    subscribers = await db.newsletter_subscriptions.find(
+        {"active": True}, 
+        {"_id": 0, "email": 1, "timestamp": 1, "source": 1}
+    ).to_list(10000)
+    
+    return {"count": len(subscribers), "subscribers": subscribers}
+
 # Include the router in the main app
 app.include_router(api_router)
 
