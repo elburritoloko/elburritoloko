@@ -46,22 +46,22 @@ const Home = () => {
               <div className="value-icon-wrapper">
                 <ChefHat size={40} />
               </div>
-              <h3>Chef étoilé</h3>
-              <p>Formé dans de grandes maisons étoilées. Une expertise gastronomique au service de votre burrito.</p>
+              <h3>Savoir-faire d'exception</h3>
+              <p>Techniques gastronomiques appliquées à chaque préparation. Une finesse gustative incomparable.</p>
             </div>
             <div className="value-card">
               <div className="value-icon-wrapper">
                 <Timer size={40} />
               </div>
               <h3>Cuisson lente 12h</h3>
-              <p>Viande cuite toute la nuit à l'étuvée. Tendresse maximale et concentration des saveurs.</p>
+              <p>Mijotage prolongé qui concentre les arômes et révèle une texture fondante unique.</p>
             </div>
             <div className="value-card">
               <div className="value-icon-wrapper">
                 <MapPin size={40} />
               </div>
               <h3>Produits suisses</h3>
-              <p>100% frais, locaux, fait maison. Aucun compromis. Aucun produit industriel.</p>
+              <p>100% frais, locaux, fait maison. Des fournisseurs triés sur le volet.</p>
             </div>
           </div>
         </div>
