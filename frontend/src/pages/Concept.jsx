@@ -25,16 +25,19 @@ const Concept = () => {
             <div className="philosophy-text">
               <h2>La gastronomie dans un burrito</h2>
               <p>
-                Un concept de restauration rapide premium qui remet le burrito à sa juste place :
-                un plat généreux, savoureux, et préparé avec respect.
+                El Burrito Loko n'est pas un fast-food comme les autres. C'est une révolution culinaire.
               </p>
               <p>
-                Chez El Burrito Loko, pas de compromis. Des ingrédients frais, des recettes
-                authentiques, une exécution rapide mais maîtrisée. Le plaisir de manger quelque
-                chose de bon, sans attendre des heures.
+                Formé dans de grandes maisons étoilées, notre chef applique des techniques gastronomiques
+                d'exception à chaque burrito. Cuisson lente de 12 heures toute la nuit. Viande étuvée pour
+                une tendresse extrême et une concentration des saveurs inégalée.
               </p>
               <p>
-                Notre ambition ? Devenir la référence du burrito premium en Suisse romande.
+                Produits 100% suisses. 100% frais. 100% locaux. 100% fait maison. Zéro produit industriel.
+                Zéro compromis. La finesse gustative d'un restaurant étoilé, servie en quelques minutes.
+              </p>
+              <p className="philosophy-ambition">
+                <strong>Notre ambition : devenir LA référence mondiale du burrito premium.</strong>
               </p>
             </div>
             <div className="philosophy-image" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1671225603584-8412a795a2d2)' }}>
