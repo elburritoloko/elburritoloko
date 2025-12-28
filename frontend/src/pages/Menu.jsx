@@ -9,30 +9,33 @@ const Menu = () => {
 
   const menuCategories = [
     {
-      name: 'Burritos au Boeuf',
+      name: 'Burritos au Bœuf',
       icon: '🥩',
+      description: 'Bœuf suisse cuit 12h à l\'étuvée. Tendresse exceptionnelle.',
       items: [
-        { name: 'El Clásico', description: 'Boeuf grillé, riz, haricots noirs, pico de gallo, crème aigre' },
-        { name: 'El Picante', description: 'Boeuf épicé, jalapeños, guacamole, fromage, salsa roja' },
-        { name: 'El Supremo', description: 'Boeuf braisé, riz coriandre-citron, haricots, guacamole, queso fresco' }
+        { name: 'El Clásico', description: 'Bœuf étuvé 12h, riz basmati, haricots noirs, pico de gallo, crème aigre maison' },
+        { name: 'El Picante', description: 'Bœuf étuvé épices maison, jalapeños confits, guacamole, fromage suisse, salsa roja' },
+        { name: 'El Supremo', description: 'Bœuf braisé 12h, riz coriandre-citron, haricots, guacamole, queso fresco artisanal' }
       ]
     },
     {
       name: 'Burritos au Poulet',
       icon: '🍗',
+      description: 'Poulet suisse mariné 24h. Saveurs profondes et authentiques.',
       items: [
-        { name: 'El Tradicional', description: 'Poulet grillé, riz, haricots pinto, salsa verde, crème' },
-        { name: 'El Verde', description: 'Poulet coriandre-citron, avocat, maïs, salsa verde, fromage' },
-        { name: 'El Ahumado', description: 'Poulet fumé, chipotle mayo, haricots noirs, pico de gallo' }
+        { name: 'El Tradicional', description: 'Poulet mariné 24h, riz, haricots pinto, salsa verde maison, crème fraîche' },
+        { name: 'El Verde', description: 'Poulet coriandre-citron, avocat frais, maïs grillé, salsa verde, fromage local' },
+        { name: 'El Ahumado', description: 'Poulet fumé maison, chipotle mayo, haricots noirs, pico de gallo artisanal' }
       ]
     },
     {
       name: 'Burritos Végétariens',
       icon: '🥑',
+      description: 'Légumes suisses de saison. Fraîcheur et créativité.',
       items: [
-        { name: 'El Vegetariano', description: 'Légumes grillés, riz, haricots, guacamole, fromage, salsa' },
-        { name: 'El Fresco', description: 'Tofu marinade, avocat, maïs, haricots noirs, salsa verde' },
-        { name: 'El Jardín', description: 'Champignons portobello, poivrons, oignons, riz, haricots, queso' }
+        { name: 'El Vegetariano', description: 'Légumes de saison grillés, riz, haricots, guacamole frais, fromage, salsa' },
+        { name: 'El Fresco', description: 'Tofu mariné maison, avocat, maïs, haricots noirs, salsa verde artisanale' },
+        { name: 'El Jardín', description: 'Champignons suisses, poivrons, oignons caramélisés, riz, haricots, queso' }
       ]
     }
   ];
