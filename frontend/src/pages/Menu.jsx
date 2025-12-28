@@ -58,10 +58,12 @@ const Menu = () => {
       <section className="menu-section">
         <div className="container">
           <div className="menu-intro">
-            <h2>Nos créations</h2>
+            <h2>La gastronomie réinventée</h2>
             <p>
-              Chaque burrito est préparé sur commande avec des ingrédients frais.
-              Les portions sont généreuses, les saveurs authentiques.
+              Chaque burrito est une expérience culinaire. Viande cuite 12h à l'étuvée pour une
+              tendresse extrême. Produits 100% suisses, frais, locaux. Tout fait maison par un chef
+              formé dans de grandes maisons étoilées. La finesse gustative d'un restaurant étoilé,
+              servie en quelques minutes.
             </p>
           </div>
 
