@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ChefHat, Timer, MapPin } from 'lucide-react';
 import Newsletter from '../components/Newsletter';
 import './Home.css';
 
