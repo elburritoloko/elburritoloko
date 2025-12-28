@@ -28,11 +28,10 @@ const Infos = () => {
                 <MapPin size={32} />
               </div>
               <h3>Adresse</h3>
-              <p className="info-main">Lausanne</p>
-              <p className="info-sub">Canton de Vaud, Suisse</p>
+              <p className="info-main">Rue Pichard 8</p>
+              <p className="info-sub">1003 Lausanne, Suisse</p>
               <p className="info-detail">
-                L'adresse précise sera communiquée prochainement.
-                Inscrivez-vous à notre newsletter pour être informé.
+                Au cœur de Lausanne, facilement accessible. À deux pas de la gare.
               </p>
             </div>
 
