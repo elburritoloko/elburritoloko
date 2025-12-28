@@ -87,27 +87,30 @@ const Home = () => {
       {/* Product Showcase */}
       <section className="showcase-section">
         <div className="container">
-          <h2 className="section-title">L'expérience El Burrito Loko</h2>
+          <h2 className="section-title">Gastronomie rencontre rapidité</h2>
+          <p className="section-subtitle">
+            L'excellence d'un restaurant étoilé. La praticité d'un fast-food premium.
+          </p>
           <div className="showcase-grid">
-            <div className="showcase-card">
-              <div className="showcase-image" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1715601104221-bdf02645d6c2)' }}></div>
-              <div className="showcase-content">
-                <h3>Ingrédients de qualité</h3>
-                <p>Chaque ingrédient est sélectionné pour sa fraîcheur et son authenticité.</p>
-              </div>
-            </div>
             <div className="showcase-card">
               <div className="showcase-image" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1671225603584-8412a795a2d2)' }}></div>
               <div className="showcase-content">
-                <h3>Savoir-faire artisanal</h3>
-                <p>Des recettes traditionnelles préparées avec passion et précision.</p>
+                <h3>Produits suisses, frais, locaux</h3>
+                <p>Chaque ingrédient est sourcé en Suisse. Fraîcheur garantie, qualité irréprochable, zéro produit industriel.</p>
+              </div>
+            </div>
+            <div className="showcase-card">
+              <div className="showcase-image" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1715601104221-bdf02645d6c2)' }}></div>
+              <div className="showcase-content">
+                <h3>Cuisson nocturne 12 heures</h3>
+                <p>Viande cuite toute la nuit à l'étuvée. Une tendresse extrême et une concentration des saveurs inégalée.</p>
               </div>
             </div>
             <div className="showcase-card">
               <div className="showcase-image" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1587146905066-659504839ad9)' }}></div>
               <div className="showcase-content">
-                <h3>Prêt en quelques minutes</h3>
-                <p>Rapide mais jamais précipité. Le respect du produit avant tout.</p>
+                <h3>Savoir-faire d'un chef étoilé</h3>
+                <p>Formé dans de grandes maisons gastronomiques. Une finesse gustative d'exception dans chaque burrito.</p>
               </div>
             </div>
           </div>
