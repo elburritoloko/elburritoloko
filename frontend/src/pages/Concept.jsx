@@ -23,7 +23,7 @@ const Concept = () => {
         <div className="container">
           <div className="philosophy-grid">
             <div className="philosophy-text">
-              <h2>El Burrito Loko, c'est quoi ?</h2>
+              <h2>La gastronomie dans un burrito</h2>
               <p>
                 Un concept de restauration rapide premium qui remet le burrito à sa juste place :
                 un plat généreux, savoureux, et préparé avec respect.
