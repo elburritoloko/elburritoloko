@@ -74,7 +74,10 @@ const Menu = () => {
             <div key={index} className="menu-category">
               <div className="category-header">
                 <span className="category-icon">{category.icon}</span>
-                <h3>{category.name}</h3>
+                <div>
+                  <h3>{category.name}</h3>
+                  <p className="category-description">{category.description}</p>
+                </div>
               </div>
               <div className="menu-items">
                 {category.items.map((item, itemIndex) => (
