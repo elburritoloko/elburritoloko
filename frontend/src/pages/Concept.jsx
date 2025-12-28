@@ -55,10 +55,10 @@ const Concept = () => {
               <div className="value-icon-wrapper">
                 <Award size={40} />
               </div>
-              <h3>Qualité</h3>
+              <h3>Excellence gastronomique</h3>
               <p>
-                Ingrédients premium, fraîcheur garantie, zéro compromis. La qualité n'est pas
-                une option, c'est la base.
+                Chef formé dans de grandes maisons étoilées. Techniques d'exception appliquées
+                à chaque préparation. Une finesse gustative incomparable.
               </p>
             </div>
 
@@ -66,10 +66,10 @@ const Concept = () => {
               <div className="value-icon-wrapper">
                 <Flame size={40} />
               </div>
-              <h3>Authenticité</h3>
+              <h3>Cuisson lente 12h</h3>
               <p>
-                Recettes traditionnelles, techniques respectées, goûts vrais. Pas de chichi,
-                juste du bon.
+                Viande cuite toute la nuit à l'étuvée. Tendresse maximale, concentration des saveurs.
+                Un processus artisanal qui ne peut être précipité.
               </p>
             </div>
 
@@ -77,10 +77,10 @@ const Concept = () => {
               <div className="value-icon-wrapper">
                 <Heart size={40} />
               </div>
-              <h3>Générosité</h3>
+              <h3>100% Fait maison</h3>
               <p>
-                Des portions qui calent, des prix justes, une expérience qui fait plaisir.
-                On ne lèse personne.
+                Aucun produit industriel. Tout est préparé sur place, chaque jour.
+                Des sauces aux marinades, tout est créé par notre chef.
               </p>
             </div>
 
@@ -88,10 +88,10 @@ const Concept = () => {
               <div className="value-icon-wrapper">
                 <Users size={40} />
               </div>
-              <h3>Respect</h3>
+              <h3>Produits suisses locaux</h3>
               <p>
-                Respect du client, du produit, de l'équipe. Chaque détail compte, chaque
-                personne compte.
+                100% frais, 100% locaux, 100% traçables. Nous soutenons les producteurs suisses
+                et garantissons une qualité irréprochable.
               </p>
             </div>
           </div>
