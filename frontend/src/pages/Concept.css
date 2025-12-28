@@ -63,6 +63,16 @@
   margin-bottom: 1.5rem;
 }
 
+.philosophy-ambition {
+  color: var(--color-bordeaux);
+  font-size: 1.125rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--color-light-gray);
+  border-left: 4px solid var(--color-gold);
+  border-radius: var(--border-radius);
+}
+
 .philosophy-image {
   height: 500px;
   background-size: cover;
