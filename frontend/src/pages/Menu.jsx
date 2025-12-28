@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Leaf, Wheat, Milk } from 'lucide-react';
+import { Leaf, Wheat, Milk, ChefHat, Clock, Flame } from 'lucide-react';
 import './Menu.css';
 
 const Menu = () => {
@@ -7,43 +7,60 @@ const Menu = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const menuCategories = [
+  const tortillaOptions = [
+    { name: 'Blé classique', price: 'Inclus', description: 'Tortilla traditionnelle artisanale' },
+    { name: 'Blé complet', price: '+1 CHF', description: 'Plus riche en fibres' },
+    { name: 'Sans Gluten', price: '+1.50 CHF', description: 'Alternative certifiée sans gluten' }
+  ];
+
+  const proteinOptions = [
     {
-      name: 'Burritos au Bœuf',
+      name: 'Bœuf',
       icon: '🥩',
-      description: 'Bœuf suisse cuit 12h à l\'étuvée. Tendresse exceptionnelle.',
-      items: [
-        { name: 'El Clásico', description: 'Bœuf étuvé 12h, riz basmati, haricots noirs, pico de gallo, crème aigre maison' },
-        { name: 'El Picante', description: 'Bœuf étuvé épices maison, jalapeños confits, guacamole, fromage suisse, salsa roja' },
-        { name: 'El Supremo', description: 'Bœuf braisé 12h, riz coriandre-citron, haricots, guacamole, queso fresco artisanal' }
-      ]
+      method: 'Mijoté 12h à l\'étuvée',
+      description: 'Tendre, juteux et qui fond en bouche. Cuisson nocturne pour une concentration maximale des saveurs.',
+      highlight: true
     },
     {
-      name: 'Burritos au Poulet',
+      name: 'Poulet',
       icon: '🍗',
-      description: 'Poulet suisse mariné 24h. Saveurs profondes et authentiques.',
-      items: [
-        { name: 'El Tradicional', description: 'Poulet mariné 24h, riz, haricots pinto, salsa verde maison, crème fraîche' },
-        { name: 'El Verde', description: 'Poulet coriandre-citron, avocat frais, maïs grillé, salsa verde, fromage local' },
-        { name: 'El Ahumado', description: 'Poulet fumé maison, chipotle mayo, haricots noirs, pico de gallo artisanal' }
-      ]
+      method: 'Mariné et cuit lentement',
+      description: 'Ultra tendre et parfumé. Marinade maison 24h puis cuisson basse température.',
+      highlight: true
     },
     {
-      name: 'Burritos Végétariens',
-      icon: '🥑',
-      description: 'Légumes suisses de saison. Fraîcheur et créativité.',
-      items: [
-        { name: 'El Vegetariano', description: 'Légumes de saison grillés, riz, haricots, guacamole frais, fromage, salsa' },
-        { name: 'El Fresco', description: 'Tofu mariné maison, avocat, maïs, haricots noirs, salsa verde artisanale' },
-        { name: 'El Jardín', description: 'Champignons suisses, poivrons, oignons caramélisés, riz, haricots, queso' }
-      ]
+      name: 'Végétarien',
+      icon: '🍄',
+      method: 'Champignons grillés & mijotés',
+      description: 'Travaillés comme une viande, une expérience unique. Champignons suisses de saison.',
+      highlight: true
     }
   ];
 
+  const baseOptions = [
+    { name: 'Riz Bio', price: 'Inclus', description: 'Riz basmati bio cultivé en Suisse' },
+    { name: 'Quinoa Suisse Bio', price: '+1 CHF', description: 'Quinoa bio produit localement' }
+  ];
+
+  const toppings = [
+    { name: 'Haricots noirs', description: 'Cuits maison, onctueux' },
+    { name: 'Salade', description: 'Fraîche et croquante' },
+    { name: 'Maïs grillé', description: 'Grillé au feu de bois' },
+    { name: 'Pico de gallo revisité', description: 'Notre version gastronomique' },
+    { name: 'Poivron grillé', description: 'Poivrons suisses grillés' },
+    { name: 'Jalapeños', description: 'Niveau piquant ajustable' }
+  ];
+
+  const extras = [
+    { name: 'Chicharron', price: '+2 CHF', description: 'Croustillant artisanal' },
+    { name: 'Guacamole', price: '+2 CHF', description: 'Préparé sur commande' },
+    { name: 'Fromage', price: '+1 CHF', description: 'Fromage suisse fondu' }
+  ];
+
   const dietaryOptions = [
-    { icon: <Leaf size={24} />, label: 'Options vegan disponibles', description: 'Sans produits animaux' },
-    { icon: <Milk size={24} />, label: 'Sans lactose possible', description: 'Sur demande' },
-    { icon: <Wheat size={24} />, label: 'Sans gluten possible', description: 'Tortilla alternative' }
+    { icon: <Leaf size={24} />, label: 'Option végétarienne', description: 'Champignons travaillés comme une viande' },
+    { icon: <Wheat size={24} />, label: 'Sans gluten possible', description: 'Tortilla certifiée sans gluten' },
+    { icon: <Milk size={24} />, label: 'Sans lactose possible', description: 'Sur demande' }
   ];
 
   return (
@@ -52,45 +69,144 @@ const Menu = () => {
       <section className="menu-hero">
         <div className="menu-hero-overlay"></div>
         <div className="container">
-          <h1>Notre Menu</h1>
-          <p className="lead">Des burritos qui ont du caractère. Et du goût.</p>
+          <h1>Construis ton burrito premium</h1>
+          <p className="lead">Chaque choix compte. Chaque ingrédient est d\'exception.</p>
         </div>
       </section>
 
-      {/* Menu Categories */}
-      <section className="menu-section">
+      {/* Introduction */}
+      <section className="menu-intro-section">
         <div className="container">
-          <div className="menu-intro">
-            <h2>La gastronomie réinventée</h2>
-            <p>
-              Chaque burrito est une expérience culinaire. Viande cuite 12h à l'étuvée pour une
-              tendresse extrême. Produits 100% suisses, frais, locaux. Tout fait maison par un chef
-              formé dans de grandes maisons étoilées. La finesse gustative d'un restaurant étoilé,
-              servie en quelques minutes.
+          <div className="intro-content">
+            <div className="intro-icon">
+              <ChefHat size={64} />
+            </div>
+            <h2>Un burrito à ton image</h2>
+            <p className="intro-text">
+              Chez El Burrito Loko, tu es le chef. Compose ton burrito parfait en choisissant 
+              chaque élément. Viande cuite 12h, produits suisses, préparations maison. 
+              L\'excellence gastronomique, assemblée selon tes envies.
             </p>
           </div>
+        </div>
+      </section>
 
-          {menuCategories.map((category, index) => (
-            <div key={index} className="menu-category">
-              <div className="category-header">
-                <span className="category-icon">{category.icon}</span>
+      {/* Step 1: Tortilla */}
+      <section className="menu-step">
+        <div className="container">
+          <div className="step-header">
+            <span className="step-number">01</span>
+            <h2>Choisis ta tortilla</h2>
+          </div>
+          <div className="options-grid">
+            {tortillaOptions.map((option, index) => (
+              <div key={index} className="option-card">
+                <h3>{option.name}</h3>
+                <p className="option-price">{option.price}</p>
+                <p className="option-description">{option.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Step 2: Protein */}
+      <section className="menu-step protein-step">
+        <div className="container">
+          <div className="step-header">
+            <span className="step-number">02</span>
+            <h2>Sélectionne ta protéine</h2>
+            <p className="step-subtitle">Le cœur de ton burrito. Préparations d\'exception.</p>
+          </div>
+          <div className="protein-grid">
+            {proteinOptions.map((option, index) => (
+              <div key={index} className={`protein-card ${option.highlight ? 'highlighted' : ''}`}>
+                <div className="protein-icon">{option.icon}</div>
+                <h3>{option.name}</h3>
+                <div className="protein-method">
+                  <Clock size={18} />
+                  <span>{option.method}</span>
+                </div>
+                <p className="protein-description">{option.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Step 3: Base */}
+      <section className="menu-step">
+        <div className="container">
+          <div className="step-header">
+            <span className="step-number">03</span>
+            <h2>Détermine ta base</h2>
+          </div>
+          <div className="options-grid">
+            {baseOptions.map((option, index) => (
+              <div key={index} className="option-card">
+                <h3>{option.name}</h3>
+                <p className="option-price">{option.price}</p>
+                <p className="option-description">{option.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Step 4: Toppings */}
+      <section className="menu-step toppings-step">
+        <div className="container">
+          <div className="step-header">
+            <span className="step-number">04</span>
+            <h2>Personnalise avec tes toppings</h2>
+            <p className="step-subtitle">Choisis autant d\'ingrédients que tu le souhaites</p>
+          </div>
+          <div className="toppings-grid">
+            {toppings.map((topping, index) => (
+              <div key={index} className="topping-item">
+                <div className="topping-bullet"></div>
                 <div>
-                  <h3>{category.name}</h3>
-                  <p className="category-description">{category.description}</p>
+                  <h4>{topping.name}</h4>
+                  <p>{topping.description}</p>
                 </div>
               </div>
-              <div className="menu-items">
-                {category.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="menu-item">
-                    <div className="menu-item-header">
-                      <h4>{item.name}</h4>
-                    </div>
-                    <p>{item.description}</p>
-                  </div>
-                ))}
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Step 5: Extras */}
+      <section className="menu-step extras-step">
+        <div className="container">
+          <div className="step-header">
+            <span className="step-number">05</span>
+            <h2>Ajoute ton extra gourmand</h2>
+          </div>
+          <div className="extras-grid">
+            {extras.map((extra, index) => (
+              <div key={index} className="extra-card">
+                <h3>{extra.name}</h3>
+                <p className="extra-price">{extra.price}</p>
+                <p className="extra-description">{extra.description}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Seasonal Section */}
+      <section className="seasonal-section">
+        <div className="container">
+          <div className="seasonal-content">
+            <Flame size={48} />
+            <h2>Burritos de saison</h2>
+            <p>
+              Tout au long de l\'année, notre chef crée des burritos de saison exclusifs. 
+              Produits locaux au sommet de leur fraîcheur, associations audacieuses, 
+              créations limitées qui évoluent avec les saisons suisses.
+            </p>
+            <p className="seasonal-cta">Découvre nos créations du moment en restaurant</p>
+          </div>
         </div>
       </section>
 
@@ -109,21 +225,8 @@ const Menu = () => {
           </div>
           <div className="dietary-note">
             <p>
-              <strong>Note :</strong> Informez notre équipe de vos préférences ou restrictions alimentaires.
-              Nous adaptons nos burritos à vos besoins.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Coming Soon */}
-      <section className="coming-soon-section">
-        <div className="container">
-          <div className="coming-soon-content">
-            <h2>Bientôt disponible</h2>
-            <p>
-              Click & Collect, commande en ligne, programme de fidélité...
-              Restez connectés pour ne rien manquer.
+              <strong>Important :</strong> Informe notre équipe de tes préférences ou restrictions alimentaires.
+              Nous adaptons chaque burrito à tes besoins avec le même niveau d\'excellence.
             </p>
           </div>
         </div>
