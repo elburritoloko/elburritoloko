@@ -107,24 +107,24 @@ const Concept = () => {
               <div className="commitment-item">
                 <span className="commitment-number">01</span>
                 <div>
-                  <h4>Ingrédients sélectionnés</h4>
-                  <p>Chaque fournisseur est choisi pour sa qualité. Pas de place pour la médiocrité.</p>
+                  <h4>Cuisson nocturne 12 heures</h4>
+                  <p>Nos viandes cuisent toute la nuit à l'étuvée. Une technique maîtrisée issue de la haute gastronomie pour une tendresse et une profondeur de goût exceptionnelles.</p>
                 </div>
               </div>
 
               <div className="commitment-item">
                 <span className="commitment-number">02</span>
                 <div>
-                  <h4>Préparation maîtrisée</h4>
-                  <p>Rapide ne veut pas dire bâclé. Chaque étape est exécutée avec précision.</p>
+                  <h4>Produits suisses, zéro industriel</h4>
+                  <p>Chaque ingrédient est sourcé localement en Suisse. Aucun produit transformé, aucun raccourci. Tout est fait maison, des sauces aux marinades.</p>
                 </div>
               </div>
 
               <div className="commitment-item">
                 <span className="commitment-number">03</span>
                 <div>
-                  <h4>Expérience complète</h4>
-                  <p>Du premier contact à la dernière bouchée, tout est pensé pour votre plaisir.</p>
+                  <h4>Expertise d'un chef étoilé</h4>
+                  <p>Notre chef, formé dans de grandes maisons gastronomiques, applique des techniques d'exception. Chaque burrito bénéficie d'un savoir-faire rare dans le fast-food.</p>
                 </div>
               </div>
             </div>
