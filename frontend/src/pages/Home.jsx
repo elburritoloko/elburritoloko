@@ -43,19 +43,25 @@ const Home = () => {
         <div className="container">
           <div className="value-grid">
             <div className="value-card">
-              <div className="value-icon">🌯</div>
-              <h3>Qualité premium</h3>
-              <p>Ingrédients frais sélectionnés avec soin. Pas de compromis sur la qualité.</p>
+              <div className="value-icon-wrapper">
+                <ChefHat size={40} />
+              </div>
+              <h3>Chef étoilé</h3>
+              <p>Formé dans de grandes maisons étoilées. Une expertise gastronomique au service de votre burrito.</p>
             </div>
             <div className="value-card">
-              <div className="value-icon">🔥</div>
-              <h3>Savoir-faire authentique</h3>
-              <p>Recettes traditionnelles, exécution maîtrisée. Le goût qui fait la différence.</p>
+              <div className="value-icon-wrapper">
+                <Timer size={40} />
+              </div>
+              <h3>Cuisson lente 12h</h3>
+              <p>Viande cuite toute la nuit à l'étuvée. Tendresse maximale et concentration des saveurs.</p>
             </div>
             <div className="value-card">
-              <div className="value-icon">❤️</div>
-              <h3>Générosité</h3>
-              <p>Des portions qui vous rassasient. Un rapport qualité-prix qui vous surprend.</p>
+              <div className="value-icon-wrapper">
+                <MapPin size={40} />
+              </div>
+              <h3>Produits suisses</h3>
+              <p>100% frais, locaux, fait maison. Aucun compromis. Aucun produit industriel.</p>
             </div>
           </div>
         </div>
