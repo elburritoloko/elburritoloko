@@ -33,103 +33,315 @@
   margin-bottom: 1.5rem;
 }
 
-/* Menu Section */
-.menu-section {
+/* Introduction Section */
+.menu-intro-section {
   padding: 5rem 0;
   background: var(--color-white);
 }
 
-.menu-intro {
+.intro-content {
   text-align: center;
-  max-width: 700px;
-  margin: 0 auto 4rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.menu-intro h2 {
-  margin-bottom: 1.5rem;
-}
-
-.menu-intro p {
-  color: var(--color-gray);
-  font-size: 1.125rem;
-  margin: 0;
-}
-
-.menu-category {
-  margin-bottom: 4rem;
-  padding: 3rem;
-  background: var(--color-light-gray);
-  border-radius: var(--border-radius-lg);
-}
-
-.category-header {
+.intro-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 2rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 2.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 3px solid var(--color-gold);
+  justify-content: center;
+  background: var(--color-bordeaux);
+  color: var(--color-gold);
+  border-radius: 50%;
 }
 
-.category-icon {
-  font-size: 2.5rem;
-}
-
-.category-header h3 {
-  font-size: 2rem;
-  margin: 0 0 0.5rem 0;
+.intro-content h2 {
+  margin-bottom: 1.5rem;
   color: var(--color-bordeaux);
 }
 
-.category-description {
-  font-size: 1rem;
-  color: var(--color-gold);
-  margin: 0;
-  font-style: italic;
-  font-weight: 500;
+.intro-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-gray);
 }
 
-.menu-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+/* Menu Steps */
+.menu-step {
+  padding: 5rem 0;
+  border-bottom: 1px solid rgba(61, 7, 38, 0.1);
 }
 
-.menu-item {
-  background: var(--color-white);
-  padding: 2rem;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.menu-step:nth-child(even) {
+  background: var(--color-light-gray);
 }
 
-.menu-item:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
+.step-header {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-.menu-item-header {
+.step-number {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: var(--color-gold);
+  color: var(--color-bordeaux);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 60px;
   margin-bottom: 1rem;
 }
 
-.menu-item h4 {
-  font-size: 1.25rem;
+.step-header h2 {
+  margin-bottom: 0.5rem;
   color: var(--color-bordeaux);
-  font-family: var(--font-serif);
+}
+
+.step-subtitle {
+  color: var(--color-gray);
+  font-size: 1.125rem;
+  margin-top: 1rem;
+}
+
+/* Options Grid */
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.option-card {
+  background: var(--color-white);
+  padding: 2.5rem 2rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.option-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-gold);
+}
+
+.option-card h3 {
+  font-size: 1.5rem;
+  color: var(--color-bordeaux);
+  margin-bottom: 0.5rem;
+}
+
+.option-price {
+  font-size: 1.125rem;
+  color: var(--color-gold);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.option-description {
+  color: var(--color-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
   margin: 0;
 }
 
-.menu-item p {
+/* Protein Section */
+.protein-step {
+  background: var(--color-light-gray);
+}
+
+.protein-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+}
+
+.protein-card {
+  background: var(--color-white);
+  padding: 3rem 2.5rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  border: 3px solid transparent;
+}
+
+.protein-card.highlighted {
+  border-color: var(--color-gold);
+}
+
+.protein-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.protein-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.protein-card h3 {
+  font-size: 1.75rem;
+  color: var(--color-bordeaux);
+  margin-bottom: 1rem;
+}
+
+.protein-method {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-gold);
+  color: var(--color-bordeaux);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.protein-description {
   color: var(--color-gray);
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
+}
+
+/* Toppings Section */
+.toppings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.topping-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  transition: transform 0.2s ease;
+}
+
+.topping-item:hover {
+  transform: translateX(5px);
+}
+
+.topping-bullet {
+  width: 12px;
+  height: 12px;
+  min-width: 12px;
+  background: var(--color-gold);
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+.topping-item h4 {
+  font-size: 1.125rem;
+  color: var(--color-bordeaux);
+  margin-bottom: 0.25rem;
+  font-family: var(--font-serif);
+}
+
+.topping-item p {
+  color: var(--color-gray);
   font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Extras Section */
+.extras-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.extra-card {
+  background: var(--color-white);
+  padding: 2.5rem 2rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid var(--color-gold);
+}
+
+.extra-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.extra-card h3 {
+  font-size: 1.5rem;
+  color: var(--color-bordeaux);
+  margin-bottom: 0.5rem;
+}
+
+.extra-price {
+  font-size: 1.25rem;
+  color: var(--color-gold);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.extra-description {
+  color: var(--color-gray);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Seasonal Section */
+.seasonal-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--color-bordeaux) 0%, #5a0f3a 100%);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.seasonal-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.seasonal-content svg {
+  color: var(--color-gold);
+  margin-bottom: 2rem;
+}
+
+.seasonal-content h2 {
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+
+.seasonal-content p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+}
+
+.seasonal-cta {
+  font-size: 1.25rem;
+  color: var(--color-gold);
+  font-weight: 600;
+  margin-top: 2rem;
 }
 
 /* Dietary Section */
 .dietary-section {
   padding: 5rem 0;
-  background: var(--color-light-gray);
+  background: var(--color-white);
 }
 
 .dietary-grid {
@@ -140,7 +352,7 @@
 }
 
 .dietary-card {
-  background: var(--color-white);
+  background: var(--color-light-gray);
   padding: 2.5rem;
   text-align: center;
   border-radius: var(--border-radius-lg);
@@ -180,7 +392,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
-  background: var(--color-white);
+  background: var(--color-light-gray);
   border-left: 4px solid var(--color-gold);
   border-radius: var(--border-radius);
 }
@@ -195,44 +407,27 @@
   color: var(--color-bordeaux);
 }
 
-/* Coming Soon Section */
-.coming-soon-section {
-  padding: 5rem 0;
-  background: linear-gradient(135deg, var(--color-bordeaux) 0%, #5a0f3a 100%);
-  color: var(--color-white);
-}
-
-.coming-soon-content {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.coming-soon-content h2 {
-  color: var(--color-white);
-  margin-bottom: 1.5rem;
-}
-
-.coming-soon-content p {
-  font-size: 1.125rem;
-  color: rgba(255, 255, 255, 0.9);
-  margin: 0;
-}
-
 @media (max-width: 768px) {
   .menu-hero {
     padding: 4rem 0;
   }
 
-  .menu-category {
-    padding: 2rem 1.5rem;
+  .menu-step {
+    padding: 3rem 0;
   }
 
-  .menu-items {
-    grid-template-columns: 1fr;
-  }
-
+  .options-grid,
+  .protein-grid,
+  .toppings-grid,
+  .extras-grid,
   .dietary-grid {
     grid-template-columns: 1fr;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+    line-height: 50px;
   }
 }
