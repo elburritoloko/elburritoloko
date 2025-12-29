@@ -35,8 +35,8 @@ const Menu = () => {
   ];
 
   const baseOptions = [
-    { name: 'Riz Bio', price: 'Inclus', description: 'Riz basmati bio cultivé en Suisse' },
-    { name: 'Quinoa Suisse Bio', price: '+1 CHF', description: 'Quinoa bio produit localement' }
+    { name: 'Riz Bio', price: 'Inclus', description: 'Riz basmati bio' },
+    { name: 'Quinoa Bio', price: '+1 CHF', description: 'Quinoa bio produit localement' }
   ];
 
   const toppings = [
