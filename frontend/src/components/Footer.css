@@ -30,6 +30,17 @@
   margin-bottom: 0.5rem;
 }
 
+.footer-email {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer-email:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 .footer-logo {
   height: 70px;
   width: auto;
