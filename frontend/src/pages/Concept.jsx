@@ -77,7 +77,7 @@ const Concept = () => {
               <h3>100% Fait maison</h3>
               <p>
                 Tout est préparé sur place, chaque jour. Des sauces aux marinades,
-                des tortillas aux garnitures. Le vrai fait maison, sans raccourci.
+                en passant par toutes les garnitures. Le vrai fait maison, sans raccourci.
               </p>
             </div>
 
