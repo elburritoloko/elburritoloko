@@ -30,9 +30,14 @@ const Infos = () => {
               <h3>Adresse</h3>
               <p className="info-main">Rue Pichard 8</p>
               <p className="info-sub">1003 Lausanne, Suisse</p>
-              <p className="info-detail">
-                Au cœur de Lausanne, facilement accessible. À deux pas de la gare.
-              </p>
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=Rue+Pichard+8,+1003+Lausanne,+Suisse" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="map-link"
+              >
+                📍 Voir sur la carte
+              </a>
             </div>
 
             {/* Hours */}
