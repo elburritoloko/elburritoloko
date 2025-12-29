@@ -104,24 +104,24 @@ const Concept = () => {
               <div className="commitment-item">
                 <span className="commitment-number">01</span>
                 <div>
-                  <h4>Cuisson nocturne 12 heures</h4>
-                  <p>Nos viandes cuisent toute la nuit à l'étuvée. Une technique maîtrisée issue de la haute gastronomie pour une tendresse et une profondeur de goût exceptionnelles.</p>
+                  <h4>Mijotage 12 heures à l'étuvée</h4>
+                  <p>Une cuisson lente qui transforme la viande. Chaque fibre s'imprègne des aromates, les saveurs se concentrent. Résultat : une texture fondante et un goût d'une profondeur rare.</p>
                 </div>
               </div>
 
               <div className="commitment-item">
                 <span className="commitment-number">02</span>
                 <div>
-                  <h4>Produits suisses, zéro industriel</h4>
-                  <p>Chaque ingrédient est sourcé localement en Suisse. Aucun produit transformé, aucun raccourci. Tout est fait maison, des sauces aux marinades.</p>
+                  <h4>Approvisionnement local exigeant</h4>
+                  <p>Chaque fournisseur est audité. Produits suisses exclusivement, fraîcheur contrôlée quotidiennement. Tout est fait maison, des marinades aux sauces en passant par les préparations.</p>
                 </div>
               </div>
 
               <div className="commitment-item">
                 <span className="commitment-number">03</span>
                 <div>
-                  <h4>Expertise d'un chef étoilé</h4>
-                  <p>Notre chef, formé dans de grandes maisons gastronomiques, applique des techniques d'exception. Chaque burrito bénéficie d'un savoir-faire rare dans le fast-food.</p>
+                  <h4>Rigueur et précision</h4>
+                  <p>Chaque geste est calibré, chaque timing respecté. Une discipline de cuisine gastronomique appliquée au service rapide. Le résultat parle de lui-même.</p>
                 </div>
               </div>
             </div>
