@@ -118,7 +118,6 @@ const Menu = () => {
           <div className="protein-grid">
             {proteinOptions.map((option, index) => (
               <div key={index} className={`protein-card ${option.highlight ? 'highlighted' : ''}`}>
-                <div className="protein-icon">{option.icon}</div>
                 <h3>{option.name}</h3>
                 <div className="protein-method">
                   <Clock size={18} />
