@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import Concept from "./pages/Concept";
 import Menu from "./pages/Menu";
 import Infos from "./pages/Infos";
+import Legal from "./pages/Legal";
+import Privacy from "./pages/Privacy";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/concept" element={<Concept />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/infos" element={<Infos />} />
+          <Route path="/mentions-legales" element={<Legal />} />
+          <Route path="/politique-confidentialite" element={<Privacy />} />
         </Routes>
         <Footer />
       </BrowserRouter>
