@@ -16,23 +16,20 @@ const Menu = () => {
   const proteinOptions = [
     {
       name: 'Bœuf',
-      icon: '🥩',
       method: 'Mijoté 12h à l\'étuvée',
-      description: 'Tendre, juteux et qui fond en bouche. Cuisson nocturne pour une concentration maximale des saveurs.',
+      description: 'Cuisson lente qui concentre les arômes et révèle une texture fondante inégalée.',
       highlight: true
     },
     {
       name: 'Poulet',
-      icon: '🍗',
-      method: 'Mariné et cuit lentement',
-      description: 'Ultra tendre et parfumé. Marinade maison 24h puis cuisson basse température.',
+      method: 'Mariné 24h et cuit lentement',
+      description: 'Marinade maison suivie d\'une cuisson douce. Chair tendre et parfumée à cœur.',
       highlight: true
     },
     {
       name: 'Végétarien',
-      icon: '🍄',
       method: 'Champignons grillés & mijotés',
-      description: 'Travaillés comme une viande, une expérience unique. Champignons suisses de saison.',
+      description: 'Préparés comme une viande noble. Champignons suisses travaillés pour une expérience gustative unique.',
       highlight: true
     }
   ];
