@@ -222,7 +222,7 @@ const Menu = () => {
           <div className="dietary-note">
             <p>
               <strong>Important :</strong> Informe notre équipe de tes préférences ou restrictions alimentaires.
-              Nous adaptons chaque burrito à tes besoins avec le même niveau d\'excellence.
+              Nous adaptons chaque burrito à tes besoins avec le même niveau d'excellence.
             </p>
           </div>
         </div>
