@@ -67,7 +67,7 @@ const Menu = () => {
         <div className="menu-hero-overlay"></div>
         <div className="container">
           <h1>Construis ton burrito premium</h1>
-          <p className="lead">Chaque choix compte. Chaque ingrédient est d\'exception.</p>
+          <p className="lead">Chaque choix compte. Chaque ingrédient est d'exception.</p>
         </div>
       </section>
 
