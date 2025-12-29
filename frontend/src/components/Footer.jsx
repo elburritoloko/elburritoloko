@@ -45,9 +45,9 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} El Burrito Loko. Tous droits réservés.</p>
           <div className="footer-legal">
-            <a href="#">Mentions légales</a>
+            <Link to="/mentions-legales">Mentions légales</Link>
             <span>•</span>
-            <a href="#">Politique de confidentialité</a>
+            <Link to="/politique-confidentialite">Politique de confidentialité</Link>
           </div>
         </div>
       </div>
