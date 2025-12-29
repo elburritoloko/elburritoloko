@@ -49,8 +49,8 @@ const Menu = () => {
   ];
 
   const extras = [
-    { name: 'Chicharron', price: '+2 CHF', description: 'Croustillant artisanal' },
-    { name: 'Guacamole', price: '+2 CHF', description: 'Préparé sur commande' },
+    { name: 'Chicharron', price: '+2 CHF', description: 'Explosion de saveurs et textures. Croustillant qui sublime chaque bouchée.' },
+    { name: 'Guacamole', price: '+2 CHF', description: 'Préparé frais tous les jours' },
     { name: 'Fromage', price: '+1 CHF', description: 'Fromage suisse fondu' }
   ];
 
