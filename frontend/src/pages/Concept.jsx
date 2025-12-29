@@ -28,9 +28,9 @@ const Concept = () => {
                 El Burrito Loko n'est pas un fast-food comme les autres. C'est une révolution culinaire.
               </p>
               <p>
-                Formé dans de grandes maisons étoilées, notre chef applique des techniques gastronomiques
-                d'exception à chaque burrito. Cuisson lente de 12 heures toute la nuit. Viande étuvée pour
-                une tendresse extrême et une concentration des saveurs inégalée.
+                Derrière chaque burrito, un savoir-faire d'exception. Cuisson lente de 12 heures à l'étuvée.
+                Viande qui fond en bouche, arômes concentrés, texture incomparable. Des techniques issues de la
+                haute gastronomie appliquées à une street-food réinventée.
               </p>
               <p>
                 Produits 100% suisses. 100% frais. 100% locaux. 100% fait maison.
