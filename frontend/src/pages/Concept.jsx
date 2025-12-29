@@ -33,11 +33,8 @@ const Concept = () => {
                 une tendresse extrême et une concentration des saveurs inégalée.
               </p>
               <p>
-                Produits 100% suisses. 100% frais. 100% locaux. 100% fait maison. Zéro produit industriel.
-                Zéro compromis. La finesse gustative d'un restaurant étoilé, servie en quelques minutes.
-              </p>
-              <p className="philosophy-ambition">
-                <strong>Notre ambition : devenir LA référence mondiale du burrito premium.</strong>
+                Produits 100% suisses. 100% frais. 100% locaux. 100% fait maison.
+                La finesse gustative d'un restaurant étoilé, servie en quelques minutes.
               </p>
             </div>
             <div className="philosophy-image" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1671225603584-8412a795a2d2)' }}>
