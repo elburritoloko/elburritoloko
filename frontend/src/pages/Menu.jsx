@@ -82,7 +82,7 @@ const Menu = () => {
             <p className="intro-text">
               Chez El Burrito Loko, tu es le chef. Compose ton burrito parfait en choisissant 
               chaque élément. Viande mijotée 12h, produits suisses, préparations maison. 
-              L'excellence gastronomique, assemblée selon tes envies.
+              L\'excellence gastronomique, assemblée selon tes envies.
             </p>
           </div>
         </div>
