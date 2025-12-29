@@ -52,10 +52,10 @@ const Concept = () => {
               <div className="value-icon-wrapper">
                 <Award size={40} />
               </div>
-              <h3>Excellence gastronomique</h3>
+              <h3>Excellence culinaire</h3>
               <p>
-                Chef formé dans de grandes maisons étoilées. Techniques d'exception appliquées
-                à chaque préparation. Une finesse gustative incomparable.
+                Techniques de haute gastronomie appliquées avec rigueur. Chaque geste compte,
+                chaque détail est maîtrisé. Une approche professionnelle au service du goût.
               </p>
             </div>
 
@@ -65,8 +65,8 @@ const Concept = () => {
               </div>
               <h3>Cuisson lente 12h</h3>
               <p>
-                Viande cuite toute la nuit à l'étuvée. Tendresse maximale, concentration des saveurs.
-                Un processus artisanal qui ne peut être précipité.
+                Mijotage prolongé à l'étuvée. La patience comme secret : concentration maximale
+                des arômes, tendreté absolue. Un processus qui ne se précipite jamais.
               </p>
             </div>
 
@@ -76,8 +76,8 @@ const Concept = () => {
               </div>
               <h3>100% Fait maison</h3>
               <p>
-                Aucun produit industriel. Tout est préparé sur place, chaque jour.
-                Des sauces aux marinades, tout est créé par notre chef.
+                Tout est préparé sur place, chaque jour. Des sauces aux marinades,
+                des tortillas aux garnitures. Le vrai fait maison, sans raccourci.
               </p>
             </div>
 
@@ -87,8 +87,8 @@ const Concept = () => {
               </div>
               <h3>Produits suisses locaux</h3>
               <p>
-                100% frais, 100% locaux, 100% traçables. Nous soutenons les producteurs suisses
-                et garantissons une qualité irréprochable.
+                100% frais, 100% locaux, 100% traçables. Partenaires producteurs sélectionnés
+                pour leur sérieux. Une qualité que l'on peut garantir.
               </p>
             </div>
           </div>
