@@ -18,8 +18,9 @@ const Footer = () => {
 
           <div className="footer-section">
             <h4>Contact</h4>
-            <p>Lausanne, Suisse</p>
-            <p>Bientôt ouvert</p>
+            <p>Rue Pichard 8</p>
+            <p>1003 Lausanne, Suisse</p>
+            <p><a href="mailto:contact@elburritoloko.ch" className="footer-email">contact@elburritoloko.ch</a></p>
           </div>
 
           <div className="footer-section">
