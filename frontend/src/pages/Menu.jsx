@@ -197,7 +197,7 @@ const Menu = () => {
             <Flame size={48} />
             <h2>Burritos de saison</h2>
             <p>
-              Tout au long de l'année, notre chef crée des burritos de saison exclusifs. 
+              Tout au long de l\'année, notre chef crée des burritos de saison exclusifs. 
               Produits locaux au sommet de leur fraîcheur, associations audacieuses, 
               créations limitées qui évoluent avec les saisons suisses.
             </p>
