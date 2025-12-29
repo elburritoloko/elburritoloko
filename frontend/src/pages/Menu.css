@@ -183,11 +183,6 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-.protein-icon {
-  font-size: 4rem;
-  margin-bottom: 1.5rem;
-}
-
 .protein-card h3 {
   font-size: 1.75rem;
   color: var(--color-bordeaux);
