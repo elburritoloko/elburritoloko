@@ -96,21 +96,21 @@ const Home = () => {
               <div className="showcase-image" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1671225603584-8412a795a2d2)' }}></div>
               <div className="showcase-content">
                 <h3>Produits suisses, frais, locaux</h3>
-                <p>Chaque ingrédient est sourcé en Suisse. Fraîcheur garantie, qualité irréprochable, zéro produit industriel.</p>
+                <p>Fournisseurs sélectionnés avec rigueur. Fraîcheur garantie, traçabilité complète. 100% fait maison.</p>
               </div>
             </div>
             <div className="showcase-card">
               <div className="showcase-image" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1715601104221-bdf02645d6c2)' }}></div>
               <div className="showcase-content">
-                <h3>Cuisson nocturne 12 heures</h3>
-                <p>Viande cuite toute la nuit à l'étuvée. Une tendresse extrême et une concentration des saveurs inégalée.</p>
+                <h3>Mijotage 12 heures</h3>
+                <p>Cuisson lente à l'étuvée qui sublime la viande. Concentration des arômes, texture incomparable.</p>
               </div>
             </div>
             <div className="showcase-card">
               <div className="showcase-image" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1587146905066-659504839ad9)' }}></div>
               <div className="showcase-content">
-                <h3>Savoir-faire d'un chef étoilé</h3>
-                <p>Formé dans de grandes maisons gastronomiques. Une finesse gustative d'exception dans chaque burrito.</p>
+                <h3>Techniques gastronomiques</h3>
+                <p>Savoir-faire de haute cuisine appliqué à chaque préparation. Précision et excellence au quotidien.</p>
               </div>
             </div>
           </div>
