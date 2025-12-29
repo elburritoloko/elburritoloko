@@ -41,8 +41,8 @@ const Menu = () => {
 
   const toppings = [
     { name: 'Haricots noirs', description: 'Cuits maison, onctueux' },
-    { name: 'Salade', description: 'Fraîche et croquante' },
-    { name: 'Maïs grillé', description: 'Grillé au feu de bois' },
+    { name: 'Salade suisse', description: 'Fraîche et croquante' },
+    { name: 'Maïs grillé', description: 'Grillé et légèrement caramélisé' },
     { name: 'Pico de gallo revisité', description: 'Notre version gastronomique' },
     { name: 'Poivron grillé', description: 'Poivrons suisses grillés' },
     { name: 'Jalapeños', description: 'Niveau piquant ajustable' }
