@@ -8,7 +8,7 @@ const Menu = () => {
   }, []);
 
   const tortillaOptions = [
-    { name: 'Blé classique', price: 'Inclus', description: 'Tortilla traditionnelle artisanale' },
+    { name: 'Blé classique', price: 'Inclus', description: 'Tortilla traditionnelle de qualité' },
     { name: 'Blé complet', price: '+1 CHF', description: 'Plus riche en fibres' },
     { name: 'Sans Gluten', price: '+1.50 CHF', description: 'Alternative certifiée sans gluten' }
   ];
