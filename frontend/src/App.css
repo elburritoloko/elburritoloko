@@ -6,8 +6,8 @@
   --color-gray: #64748b;
   --color-dark: #1e293b;
   
-  --font-serif: 'Crimson Text', 'Times New Roman', serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Futura', 'Century Gothic', 'Avenir', Arial, sans-serif;
+  --font-sans: 'Futura', 'Century Gothic', 'Avenir', Arial, sans-serif;
   
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
